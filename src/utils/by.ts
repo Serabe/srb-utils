@@ -1,5 +1,4 @@
-type Mapper<T, K extends keyof T> = (item: T) => T[K];
-type Filter<T> = (item: T) => boolean;
+import { Filter, Mapper } from '../types';
 
 export function by<T, K extends keyof T>(prop: K): Mapper<T, K>;
 export function by<T, K extends keyof T>(prop: K, value: T[K] | null | undefined): Filter<T>;
