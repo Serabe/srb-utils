@@ -72,10 +72,6 @@
       "src/*.{js,ts}"
     ]
   },
-  "prettier": {
-    "semi": true,
-    "singleQuote": true
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
