@@ -1,6 +1,18 @@
 {
   "extends": [
+    "tslint-ionic-rules/strict",
     "tslint-config-standard",
+    "tslint-plugin-prettier",
     "tslint-config-prettier"
-  ]
+  ],
+  "rules": {
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive"
+      }
+    ],
+    "prettier": true,
+    "strict-type-predicates": false
+  }
 }
